@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout_page</title>
+    <link rel="shortcut icon" href="content/images/icons/a886eac.svg" />
+    <link rel="stylesheet" href="content/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="content/css/vendors/bootstrap-icons.css" />
+    <link rel="stylesheet" href="content/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="content/css/vendors/select2.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="content/css/style.css" />
+</head>
+
+<body>
+    <section class="checkout-page">
+        <div class="head-checkout">
+            <a href="index.html" class="logo-checkout">
+                <img src="content/images/icons/mera_logo.webp" alt="">
+            </a>
+            <h3>إتمام عملية الشراء ( 2 منتج )</h3>
+            <a href="cart.html" class="back-cart">
+                العودة لسلة التسوق
+                <i class="bi bi-arrow-left"></i>
+            </a>
+        </div>
+        <div class="container">
+            <div class="checkout-parts">
+                <div class="right-part">
+                    <ul class="list-steps">
+                        <li class="address-li">
+                            <h3>
+                                <span>1</span>
+                                عنوان الشحن
+                            </h3>
+                            <div class="choose--address">
+                                <p class="address-text">حدد عنوان استلام الطلب واحرص علي صحة بيانات الموقع</p>
+
+                                <div class="flex_address">
+                                    <div class="input_label">
+                                        <input type="radio" name="radio" id="address_input">
+                                        <label for="address_input" class="label_span">
+                                            <span></span>
+                                            <p class="p_address">السعودية_الرياض</p>
+                                        </label>
+                                    </div>
+
+                                    <div class="btn_actions">
+                                        <a href="#" class="update_icon"><i
+                                                class="bi bi-pencil"></i><span class="small_span">تعديل</span></a>
+                                        <a href="#" class="delete_icon"><i class="bi bi-trash"></i><span class="small_span">حذف</span></a>
+                                    </div>
+                                </div>
+
+                                <div class="flex_address">
+                                    <div class="input_label">
+                                        <input type="radio" name="radio" id="address_input2">
+                                        <label for="address_input2" class="label_span">
+                                            <span></span>
+                                            <p class="p_address">السعودية_الرياض</p>
+                                        </label>
+                                    </div>
+
+                                    <div class="btn_actions">
+                                        <a href="#" class="update_icon"><i
+                                                class="bi bi-pencil"></i><span class="small_span">تعديل</span></a>
+                                        <a href="#" class="delete_icon"><i class="bi bi-trash"></i><span class="small_span">حذف</span></a>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="new-address" data-bs-toggle="modal"
+                                    data-bs-target="#add-address-modal">
+                                    <i class="bi bi-plus-lg"></i>
+                                    اضافة عنوان جديد
+                                </a>
+
+                                <button type="button" class="save-btn" aria-label="btn">تاكيد العنوان</button>
+                            </div>
+                        </li>
+                </div>
+
+
+                <div class="left-part">
+                    <div class="cart_total_div bg_cart_total_div">
+
+                        <div class="cupon_input_btn cuppon_div">
+                            <input class="cupon_input" type="number" placeholder="ادخل كود الخصم" />
+                            <a href="#" class="cupon_btn">تطبيق</a>
+                        </div>
+
+                        <h5 class="all_car">ملخص الطلب</h5>
+
+                        <div class="All_total_divees">
+                            <div class="total_div">
+                                <p>المجموع الفرعي</p>
+
+                                <p>
+                                    <span class="number">100</span><span class="money">ريال</span>
+                                </p>
+                            </div>
+
+                            <div class="total_div">
+
+                                <p>كوبون</p>
+                                <p class="p_color"><span class="number">-50</span><span class="money">ريال</span>
+                                </p>
+                            </div>
+
+                            <div class="total_div delivery_charge">
+                                <p><span>رسوم التوصيل</span>
+                                </p>
+
+                                <p><span class="money">--</span></p>
+                            </div>
+                            <div class="total_amount">
+                                <div class="total_div">
+                                    <p><span class="number">اجمالي المبلغ</span>
+                                    </p>
+
+                                    <p><span class="money">50</span><span class="money">ريال</span></p>
+                                </div>
+
+                                <p class="text_p">شامل ضريبة القيمة المضافه</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="all_ul">
+                <ul class="ul_labels">
+                    <li class="input_label">
+                        <input type="radio" name="payment" id="payment_input">
+                        <label for="payment_input" class="label_span">
+                            <span></span>
+                            <img src="content/images/icons/1280px-Mada_Logo.svg (1).png">
+                        </label>
+                    </li>
+                    <li class="input_label">
+                        <input type="radio" name="payment" id="payment_input1">
+                        <label for="payment_input1" class="label_span">
+                            <span></span>
+                            <img src="content/images/icons/visa2.png">
+                        </label>
+
+                    </li>
+                    <li class="input_label">
+                        <input type="radio" name="payment" id="payment_input2">
+                        <label for="payment_input2" class="label_span icon_label">
+                            <span></span>
+                            <i class="bi bi-bank"></i>
+                            <p>تحويل بنكي</p>
+                        </label>
+
+                    </li>
+
+                    <li class="input_label">
+                        <input type="radio" name="payment" id="payment_input3">
+                        <label for="payment_input3" class="label_span icon_label">
+                            <span></span>
+                            <i class="bi bi-hand-thumbs-up"></i>
+                            <p>الدفع عند الاستلام</p>
+                        </label>
+
+                    </li>
+                </ul>
+                <div class="all_row_content">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="cart_number">
+                                <label>رقم البطاقه</label>
+                                <input type="number" placeholder="رقم البطاقه">
+                                <i class="bi bi-wallet2"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                        <div class="expired_date_label">
+                            <label>تاريخ الانتهاء</label>
+                            <div class="expired_date">
+                                <input type="text" placeholder="شهر">
+                                <span>/</span>
+                                <input type="text" placeholder="سنه">
+                            </div>
+                     
+                        </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                            <div class="CVC_number">
+                                <label>رمز التحقق (CVC)</label>
+                                <input type="number" placeholder="(CVC) رمز التحقق">
+                            </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                            <button class="Confirm_payment">تاكيد الدفع</button>
+                            </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- add address -->
+    <div class="modal fade" id="add-address-modal">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">اضافة عنوان جديد</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+
+                        <div class="flex-div">
+                            <div class="form-group">
+                                <label for="">اختر الدوله</label>
+                                <select name="" class="form-select">
+                                    <option value="">السعوديه</option>
+                                    <option value="">مكة المكرمة</option>
+                                    <option value="">المدينة المنورة</option>
+                                    <option value="">القصيم</option>
+                                    <option value="">تبوك</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">اختر المدينه</label>
+                                <select name="" class="form-select">
+                                    <option value="">الخرج</option>
+                                    <option value="">الدرعية</option>
+                                    <option value="">الدوادمي</option>
+                                    <option value="">المجمعة</option>
+                                    <option value="">القويعية</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="flex-div">
+                            <div class="form-group">
+                                <label for="">الحي</label>
+                                <input type="text" class="form-control" placeholder="اسم الحي">
+                            </div>
+                            <div class="form-group">
+                                <label for="">االشارع</label>
+                                <input type="text" class="form-control" placeholder="اسم الشارع">
+                            </div>
+                        </div>
+
+                        <div class="flex-div">
+                            <div class="form-group">
+                                <label for="">الرمز البريدي (اختياري)</label>
+                                <input type="text" class="form-control" placeholder="الرمز البريدي">
+                            </div>
+                            <div class="form-group">
+                                <label for="">وصف البيت (اختياري)</label>
+                                <input type="text" class="form-control" placeholder="وصف البيت">
+                            </div>
+                        </div>
+
+                        <button class="save_button">حفظ</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        <!-- Scroll top bar -->
+        <button id="scroll__top">
+            <i class="bi bi-chevron-up"></i>
+        </button>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="content/js/vendors/all.min.js"></script>
+    <script src="content/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="content/js/vendors/swiper-bundle.min.js"></script>
+    <script src="content/js/vendors/select2.min.js"></script>
+    <script>
+        $(".select2-custom").select2({
+            dir: "rtl"
+        });
+    </script>
+    <script src="content/js/scripts.js"></script>
+
+
+</body>
+
+</html>
